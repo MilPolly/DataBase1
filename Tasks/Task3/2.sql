@@ -1,14 +1,9 @@
---Показать список людей (поля FirstName, LastName), 
---в котором указан уровень человека в организации (OrganizationLevel) или нет, 
---из таблиц Person.Person, HumanResources.Employee, используя LEFT OUTER JOIN.
+--РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє Р»СЋРґРµР№ (РїРѕР»СЏ FirstName, LastName), 
+--РІ РєРѕС‚РѕСЂРѕРј СѓРєР°Р·Р°РЅ СѓСЂРѕРІРµРЅСЊ С‡РµР»РѕРІРµРєР° РІ РѕСЂРіР°РЅРёР·Р°С†РёРё (OrganizationLevel) РёР»Рё РЅРµС‚, 
+--РёР· С‚Р°Р±Р»РёС† Person.Person, HumanResources.Employee, РёСЃРїРѕР»СЊР·СѓСЏ LEFT OUTER JOIN.
 SELECT	p.FirstName
 	,	p.LastName
 	,	h.OrganizationLevel
 FROM	Person.Person AS p
 LEFT OUTER JOIN HumanResources.Employee AS h
 ON  p.BusinessEntityID = h.BusinessEntityID
-
-SELECT	*
-FROM	Person.Person 
-SELECT*
-FROM	 HumanResources.Employee 

@@ -1,11 +1,4 @@
---Показать список ProductID, которые содержатся в таблице Production.Product, но не содержатся в таблице Production.WorkOrder
-SELECT	 *
-FROM	Production.Product
-
-
-SELECT	 *
-FROM	Production.WorkOrder
-
+--РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє ProductID, РєРѕС‚РѕСЂС‹Рµ СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РІ С‚Р°Р±Р»РёС†Рµ Production.Product, РЅРѕ РЅРµ СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РІ С‚Р°Р±Р»РёС†Рµ Production.WorkOrder
 SELECT	 p.ProductID
 FROM	Production.Product AS p
 LEFT JOIN Production.WorkOrder AS l
