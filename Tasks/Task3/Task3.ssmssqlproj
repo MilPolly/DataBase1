@@ -25,6 +25,12 @@
           <AssociatedConnUserName />
           <FullPath>1.sql</FullPath>
         </FileNode>
+        <FileNode Name="1-1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:POLLY-MILASH-W:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>POLLY-MILASH-W</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>1-1.sql</FullPath>
+        </FileNode>
         <FileNode Name="2.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:POLLY-MILASH-W:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>POLLY-MILASH-W</AssociatedConnSrvName>
@@ -54,6 +60,12 @@
           <AssociatedConnSrvName>POLLY-MILASH-W</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>6.sql</FullPath>
+        </FileNode>
+        <FileNode Name="6-1.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:POLLY-MILASH-W:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>POLLY-MILASH-W</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>6-1.sql</FullPath>
         </FileNode>
         <FileNode Name="7.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:POLLY-MILASH-W:True</AssociatedConnectionMoniker>
