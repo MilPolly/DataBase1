@@ -1,10 +1,9 @@
---Показать комбинированный список таблиц Person.Address, Person.BusinessEntityAddress по полям AddressID, ModifiedDate, используя UNION.
-SELECT	AddressID
-	,	ModifiedDate
+--РџРѕРєР°Р·Р°С‚СЊ РєРѕРјР±РёРЅРёСЂРѕРІР°РЅРЅС‹Р№ СЃРїРёСЃРѕРє С‚Р°Р±Р»РёС† Person.Address, Person.BusinessEntityAddress РїРѕ РїРѕР»СЏРј AddressID, ModifiedDate, РёСЃРїРѕР»СЊР·СѓСЏ UNION.
+SELECT AddressID
+   ,   ModifiedDate
 FROM	Person.Address
 UNION
-SELECT	AddressID
-	,	ModifiedDate
+SELECT AddressID
+   ,   ModifiedDate
 FROM	Person.BusinessEntityAddress
 
-SELECT	AddressID

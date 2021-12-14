@@ -1,6 +1,6 @@
---Показать список покупателей (CustomerID), которые имеют несколько сумм налога (TaxAmt), из таблицы Sales.SalesOrderHeader, используя SELF JOIN. Сумма налога меньше 100.
-SELECT	p.CustomerID
-	,	p.TaxAmt
+--РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє РїРѕРєСѓРїР°С‚РµР»РµР№ (CustomerID), РєРѕС‚РѕСЂС‹Рµ РёРјРµСЋС‚ РЅРµСЃРєРѕР»СЊРєРѕ СЃСѓРјРј РЅР°Р»РѕРіР° (TaxAmt), РёР· С‚Р°Р±Р»РёС†С‹ Sales.SalesOrderHeader, РёСЃРїРѕР»СЊР·СѓСЏ SELF JOIN. РЎСѓРјРјР° РЅР°Р»РѕРіР° РјРµРЅСЊС€Рµ 100.
+SELECT DISTINCT(p.CustomerID)
+   ,   p.TaxAmt
 FROM Sales.SalesOrderHeader AS p
 INNER JOIN Sales.SalesOrderHeader AS l
 ON p.CustomerID=l.CustomerID

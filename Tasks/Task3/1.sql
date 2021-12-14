@@ -1,8 +1,7 @@
---Показать цену за штуку (UnitPrice) и поля Name, ProductNumber из таблиц Production.Product, Sales.SalesOrderDetail.
-SELECT	S.UnitPrice
-	,	P.[Name]
-	,	P.ProductNumber
+--РџРѕРєР°Р·Р°С‚СЊ С†РµРЅСѓ Р·Р° С€С‚СѓРєСѓ (UnitPrice) Рё РїРѕР»СЏ Name, ProductNumber РёР· С‚Р°Р±Р»РёС† Production.Product, Sales.SalesOrderDetail.
+SELECT S.UnitPrice
+   ,   P.[Name]
+   ,   P.ProductNumber
 FROM	Production.Product AS P
 INNER JOIN	Sales.SalesOrderDetail AS S
-ON P.ProductID = S.SalesOrderDetailID
-
+ON P.ProductID = S.ProductID

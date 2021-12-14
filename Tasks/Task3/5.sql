@@ -1,10 +1,6 @@
---Показать список остатков на складах (Quantity), которые соответсвуют нескольким продуктам (ProductID), из таблицы Production.ProductInventory, используя SELF JOIN.
-SELECT p.Quantity
+--РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє РѕСЃС‚Р°С‚РєРѕРІ РЅР° СЃРєР»Р°РґР°С… (Quantity), РєРѕС‚РѕСЂС‹Рµ СЃРѕРѕС‚РІРµС‚СЃРІСѓСЋС‚ РЅРµСЃРєРѕР»СЊРєРёРј РїСЂРѕРґСѓРєС‚Р°Рј (ProductID), РёР· С‚Р°Р±Р»РёС†С‹ Production.ProductInventory, РёСЃРїРѕР»СЊР·СѓСЏ SELF JOIN.
+SELECT DISTINCT(p.Quantity)
 FROM Production.ProductInventory AS p
 INNER JOIN  Production.ProductInventory AS l
 ON p.ProductID = l.ProductID
 WHERE p.ProductID = l.ProductID
-
-
-SELECT *
-FROM Production.ProductInventory 
