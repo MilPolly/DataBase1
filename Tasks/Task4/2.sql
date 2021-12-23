@@ -3,10 +3,12 @@
 SELECT ProductSubcategoryID
    ,   COUNT([Name])
 FROM Production.Product
-WHERE COUNT([Name]) IN (
-      SELECT MIN (COUNT([Name]))
+GROUP BY ProductSubcategoryID
+HAVING COUNT([Name]) =
+(
+      SELECT TOP 1 COUNT([Name])
       FROM Production.Product
       GROUP BY ProductSubcategoryID
-      ORDER BY COUNT([Name]));
+      ORDER BY COUNT([Name]) );
 
 

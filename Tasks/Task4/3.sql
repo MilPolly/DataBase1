@@ -7,7 +7,7 @@ SELECT [Name]
 FROM Production.Product
 WHERE ProductLine IN 
    (SELECT ProductLine
-      ,    COUNT(DISTINCT((ProductLine))
     FROM Production.Product
 	WHERE ProductLine IS NOT NULL
-	AND COUNT(ProductLine) > 3)
+	GROUP BY ProductLine
+  HAVING COUNT(ProductLine) > 3)
